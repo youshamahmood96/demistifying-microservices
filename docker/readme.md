@@ -55,8 +55,11 @@ for example,
 docker exec -it 4bed120466cf redis-cli
 ```
 `-it` flag here is combination of `-i` & `-t`
+<br/>
 `-i` flag makes sure that when we exceute a new command inside that terminal, we attach it with `STDIN`
+<br/>
 `-t` flag is for format
+<br/>
 10. Open up a command shell in the context of a running container to execute command
 ```
 docker exec -it <container-id> sh
