@@ -47,6 +47,11 @@ docker kill <container-id>
 ```
 If `docker stop` doesnt stop a container within 10 seconds, `docker kill` will take over.
 
+To kill all the containers currently running,
+```
+docker kill $(docker ps -q)
+```
+
 9. Execute an additional command in a container
 ```
 docker exec -it <container-id> <command>
@@ -60,7 +65,6 @@ docker exec -it 4bed120466cf redis-cli
 `-i` flag makes sure that when we exceute a new command inside that terminal, we attach it with `STDIN`
 <br/>
 `-t` flag is for format
-
 10. Open up a command shell in the context of a running container to execute command
 ```
 docker exec -it <container-id> sh
@@ -73,8 +77,5 @@ docker exec -it 4bed120466cf sh
 ```
 docker run -it <image-name> sh
 ```
-
-
-
 
 
