@@ -78,4 +78,21 @@ docker exec -it 4bed120466cf sh
 docker run -it <image-name> sh
 ```
 
+12. Serve the Dockerfile to docker client,server which in turn creates an  image
+```
+docker build .
+```
 
+13. Tag an image
+```
+docker build -t <your-docker-id>/<name-of-project>:<version-no> .
+```
+for example
+```
+docker build -t yousha96/redis/latest .
+```
+
+14. Port Mapping
+```
+docker run -p 8080:8080 <image-name>
+```
