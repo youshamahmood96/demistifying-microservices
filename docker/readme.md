@@ -46,6 +46,7 @@ docker stop <container-id>
 docker kill <container-id>
 ```
 If `docker stop` doesnt stop a container within 10 seconds, `docker kill` will take over.
+
 9. Execute an additional command in a container
 ```
 docker exec -it <container-id> <command>
@@ -68,5 +69,12 @@ for example
 ```
 docker exec -it 4bed120466cf sh
 ```
+11. Open a container with shell directly
+```
+docker run -it <image-name> sh
+```
+
+
+
 
 
